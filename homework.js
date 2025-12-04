@@ -507,20 +507,20 @@
 // console.log(s);
 
 // 20-
-let n = parseInt(prompt("n = "));
-let s = true;    
+// let n = parseInt(prompt("n = "));
+// let s = true;    
 
-while (n > 0) {
-    let x = n % 10;
-    n = Math.floor(n / 10);
+// while (n > 0) {
+//     let x = n % 10;
+//     n = Math.floor(n / 10);
 
-    if (x === 2) {
-        console.log("2 raqami mavjud");
-        s = false;
-        break;
-    }
-}
+//     if (x === 2) {
+//         console.log("2 raqami mavjud");
+//         s = false;
+//         break;
+//     }
+// }
 
-if (s) {
-    console.log("2 raqami mavjud emas");
-}
+// if (s) {
+//     console.log("2 raqami mavjud emas");
+// }
