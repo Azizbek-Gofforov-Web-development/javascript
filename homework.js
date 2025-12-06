@@ -1,12 +1,12 @@
 // class work //
-// 1-
+// 1-Masala
 // let age;
 
 // while (true) {
 //     age = prompt("Yoshingizni kiriting:");
 //     age = Number(age);
 
-//     if (age >= 0 && age <= 120) break;
+//     if (age >= 0 && age <= 80) break;
 //     alert("Yoshni noto'g'ri kiritdingiz, qayta kiriting!");
 // }
 
@@ -15,48 +15,53 @@
 // } else {
 //     alert("Xush kelibsiz!");
 // }
+// tugadi
 
-// 2-
+// 2-Masala
+// Bu kod faqat dekab uchun tuzildi shartida shunday deyilgann :)
+
 // let day = Number(prompt("Dekabr kunini kiriting:"));
-
-// let w = (day - 1) % 7; 
 // let result;
 
-// switch (w) {
-//     case 0:
-//         result = "Dushanba";
-//         break;
-//     case 1:
-//         result = "Seshanba";
-//         break;
-//     case 2:
-//         result = "Chorshanba";
-//         break;
-//     case 3:
-//         result = "Payshanba";
-//         break;
-//     case 4:
-//         result = "Juma";
-//         break;
-//     case 5:
-//         result = "Shanba";
-//         break;
-//     case 6:
-//         result = "Yakshanba";
-//         break;
-//     default:
-//         result = "Noto'g'ri son kiritildi!";
+// if (day < 1 || day > 31 || isNaN(day)) {
+//     result = "Xato! Dekabr oyida 1 dan 31 gacha kun bo'ladi.";
+// } else {
+//     let w = (day - 1) % 7;
+
+//     switch (w) {
+//         case 0:
+//             result = day + "-Dekabr " + "Dushanba";
+//             break;
+//         case 1:
+//             result = day + "-Dekabr " + "Seshanba";
+//             break;
+//         case 2:
+//             result = day + "-Dekabr " + "Chorshanba";
+//             break;
+//         case 3:
+//             result = day + "-Dekabr " + "Payshanba";
+//             break;
+//         case 4:
+//             result = day + "-Dekabr " + "Juma";
+//             break;
+//         case 5:
+//             result = day + "-Dekabr " + "Shanba";
+//             break;
+//         case 6:
+//             result = day + "-Dekabr " + "Yakshanba";
+//             break;
+//     }
 // }
-
 // alert(result);
+// Tugadi
 
-// 3-
+// 3-Masala
 // let year = Number(prompt("Yil kiriting:"));
 
 // for (let i = 4; i <= year; i += 4) {
 //     console.log(i);
 // }
-
+// Tugadi
 
 ///////////// Uy ishi /////////
 
@@ -65,13 +70,13 @@
 // let result;
 
 // switch (n) {
-//     case 1: result = "Dushanba"; break;
-//     case 2: result = "Seshanba"; break;
-//     case 3: result = "Chorshanba"; break;
-//     case 4: result = "Payshanba"; break;
-//     case 5: result = "Juma"; break;
-//     case 6: result = "Shanba"; break;
-//     case 7: result = "Yakshanba"; break;
+//     case 1: result = n + "-" + "Dushanba"; break;
+//     case 2: result = n + "-" + "Seshanba"; break;
+//     case 3: result = n + "-" + "Chorshanba"; break;
+//     case 4: result = n + "-" + "Payshanba"; break;
+//     case 5: result = n + "-" + "Juma"; break;
+//     case 6: result = n + "-" + "Shanba"; break;
+//     case 7: result = n + "-" + "Yakshanba"; break;
 //     default: result = "Noto‘g‘ri son!";
 // }
 
@@ -129,11 +134,11 @@
 
 // switch(m){
 //     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-//         days = 31; break;
+//         days = m + "-oyda. " + 31 + " kun bor"; break;
 //     case 4: case 6: case 9: case 11:
-//         days = 30; break;
+//         days = m + "-oyda. " + 30 + " kun bor"; break;
 //     case 2:
-//         days = 28; break; 
+//         days = 28 + " kun bor"; break; 
 //     default:
 //         days = "Xato oy!";
 // }
@@ -186,31 +191,65 @@
 //     default: kg = "Xato!";
 // }
 
-// alert(kg + " Kg");
+// alert(kg + " kg");
 
 // 8-
 // let D = Number(prompt("Kun (1–31):"));
 // let M = Number(prompt("Oy (1–12):"));
 
 // let oyNomi;
+// let days = 0;
 
-// switch(M){
-//     case 1: oyNomi="Yanvar"; break;
-//     case 2: oyNomi="Fevral"; break;
-//     case 3: oyNomi="Mart"; break;
-//     case 4: oyNomi="Aprel"; break;
-//     case 5: oyNomi="May"; break;
-//     case 6: oyNomi="Iyun"; break;
-//     case 7: oyNomi="Iyul"; break;
-//     case 8: oyNomi="Avgust"; break;
-//     case 9: oyNomi="Sentabr"; break;
-//     case 10: oyNomi="Oktabr"; break;
-//     case 11: oyNomi="Noyabr"; break;
-//     case 12: oyNomi="Dekabr"; break;
-//     default: oyNomi="Xato!";
+// switch (M) {
+//     case 12:
+//         days += 30;
+//         oyNomi = "Dekabr";
+//     case 11:
+//         if (M == 11) oyNomi = "Noyabr";
+//         days += 31;
+//     case 10:
+//         if (M == 10) oyNomi = "Oktabr";
+//         days += 30;
+//     case 9:
+//         if (M == 9) oyNomi = "Sentabr";
+//         days += 31;
+//     case 8:
+//         if (M == 8) oyNomi = "Avgust";
+//         days += 31;
+//     case 7:
+//         if (M == 7) oyNomi = "Iyul";
+//         days += 30;
+//     case 6:
+//         if (M == 6) oyNomi = "Iyun";
+//         days += 31;
+//     case 5:
+//         if (M == 5) oyNomi = "May";
+//         days += 30;
+//     case 4:
+//         if (M == 4) oyNomi = "Aprel";
+//         days += 31;
+//     case 3:
+//         if (M == 3) oyNomi = "Mart";
+//         days += 28;
+//     case 2:
+//         if (M == 2) oyNomi = "Fevral";
+//         days += 31;
+//     case 1:
+//         if (M == 1) oyNomi = "Yanvar";
+//         break;
+
+//     default:
+//         alert("Xato oy kiritildi!");
+//         oyNomi = "Xato!";
 // }
 
-// alert(D + " " + oyNomi);
+// days += D;
+
+// alert(
+//     D + " " + oyNomi + "\n" +
+//     "Yil boshidan beri: " + days + " kun"
+// );
+
 
 // 9-
 // let d = Number(prompt("Kun:"));
@@ -268,7 +307,7 @@
 // while (a > b) {
 //     a -= b;
 // }
-
+// console.log("Sig'adi = " + b);
 // console.log("Bo'sh qolgan qism = " + a);
 
 
@@ -277,9 +316,9 @@
 // let b = +prompt("b = ");
 // let s = 0;
 
-// while (a > b) {
+// while (a >= b) {
 //     a -= b;
-//     s += 1;
+//     s++;
 // }
 
 // console.log(s + " marta joylashtirish mumkin");
@@ -313,19 +352,21 @@
 //     i++;
 // }
 
-// if (!topildi) {
+// if (!topildi) { // import !global scope
 //     console.log("n soni 3 ning hech qanday darajasi emas!");
 // }
 
 // 5-
-// let n2 = 10;
+// let n2 = +prompt("n2 = ");
 // let k = 0;
 
 // while (n2 > 1) {
 //     n2 /= 2;
 //     k++;
 // }
+
 // console.log("k =", k);
+
 
 // 6-
 // let n = parseInt(prompt("n = "));
@@ -364,16 +405,16 @@
 // console.log("Kvadrati n sonidan katta bo'lmagan eng katta son = " + (i - 1));
 
 // 9-
-// let n = parseInt(prompt("n = "));
-// let i = 0;
-// let s = 1;
+let n = parseInt(prompt("n = "));
+let i = 0;
+let s = 1;
 
-// while (s <= n) {
-//     i++;
-//     s = Math.pow(3, i);
-// }
+while (s <= n) {
+    i++;
+    s = Math.pow(3, i);
+}
 
-// console.log(`3 ning ${i} - darajasi = ${s}`);
+console.log(`3 ning ${i} - darajasi = ${s}`);
 
 // 10-
 // let n = parseInt(prompt("n = "));
