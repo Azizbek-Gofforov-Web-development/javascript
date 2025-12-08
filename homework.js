@@ -573,3 +573,5 @@ console.log("k = " + i);
 //     console.log("2 raqami yo'q");
 // }
 
+
+
