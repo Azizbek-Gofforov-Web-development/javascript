@@ -405,16 +405,16 @@
 // console.log("Kvadrati n sonidan katta bo'lmagan eng katta son = " + (i - 1));
 
 // 9-
-let n = parseInt(prompt("n = "));
-let i = 0;
-let s = 1;
+// let n = parseInt(prompt("n = "));
+// let i = 0;
+// let s = 1;
 
-while (s <= n) {
-    i++;
-    s = Math.pow(3, i);
-}
+// while (s <= n) {
+//     i++;
+//     s = Math.pow(3, i);
+// }
 
-console.log(`3 ning ${i} - darajasi = ${s}`);
+// console.log(`3 ning ${i} - darajasi = ${s}`);
 
 // 10-
 // let n = parseInt(prompt("n = "));
@@ -429,17 +429,18 @@ console.log(`3 ning ${i} - darajasi = ${s}`);
 // console.log(i - 1);
 
 // 11-
-// let n = parseInt(prompt("n = "));
+// let n11 = +prompt("n = ");
 // let k = 0;
 // let s = 0;
 
-// while (s < n) {
+// while (s < n11) {
 //     k++;
 //     s += k;
 // }
 
-// console.log("k = " + k);
-// console.log("Yig'indi = " + s);
+// console.log("k =", k);
+// console.log("Yig'indi =", s);
+
 
 // 12-
 // let n = parseInt(prompt("n = "));
@@ -455,30 +456,31 @@ console.log(`3 ning ${i} - darajasi = ${s}`);
 // console.log("Yig'indi = " + (s - k));
 
 // 13-
-// let a = parseFloat(prompt("a = "));
-// let s = 1;
-// let i = 1;
+let a = parseFloat(prompt("a = "));
+let s = 1;
+let i = 1;
 
-// while (s <= a) {
-//     i++;
-//     s += 1 / i;
-// }
+while (s <= a) {
+    i++;
+    s += 1 / i;
+}
 
-// console.log("s = " + s);
-// console.log("k = " + i);
+console.log("s = " + s);
+console.log("k = " + i);
 
 // 14-
-// let a = parseFloat(prompt("a = "));
-// let s = 1;
-// let k = 1;
+// let a = +prompt("a = ");
+// let k = 0;
+// let sum = 0;
 
-// while (s <= a) {
+// while (sum + 1 / (k + 1) < a) {
 //     k++;
-//     s += 1 / k;
+//     sum += 1 / k;
 // }
 
-// console.log("Yig'indi = " + (s - 1 / k));
-// console.log("k = " + (k - 1));
+// console.log("Eng katta k =", k);
+// console.log("Yig'indi =", sum);
+
 
 // 15-
 // let s = parseFloat(prompt("Summa = "));
@@ -497,19 +499,20 @@ console.log(`3 ning ${i} - darajasi = ${s}`);
 // console.log("Umumiy summa = " + y);
 
 // 16-
-// let p = parseFloat(prompt("Foiz (0 < foiz < 50) = "));
+// let p = +prompt("p = "); // foiz
+// let kun = 1;
+// let masofa = 10;
+// let jami = 10;
 
-// let y = 10; 
-// let k = 0;  
-
-// while (y <= 200) {
-//     let x = y * p / 100;
-//     y += x;
-//     k++;
+// while (jami <= 200) {
+//     masofa = masofa + masofa * p / 100;  
+//     jami += masofa;
+//     kun++;
 // }
 
-// console.log("Kun = " + k);
-// console.log("Umumiy masofa = " + y);
+// console.log("Natija:", kun, "kunda");
+// console.log("Jami yugurilgan masofa:", Math.floor(jami));
+
 
 // 17-
 // let n = parseInt(prompt("n = "));
@@ -525,43 +528,48 @@ console.log(`3 ning ${i} - darajasi = ${s}`);
 // console.log("Qoldiq = " + n);
 
 // 18-
-// let n = parseInt(prompt("n = "));
-// let k;
+// let n = +prompt("n = ");
+// let teskari = 0;
 
 // while (n > 0) {
-//     let x = n % 10;
-//     n = Math.floor(n / 10);
-//     k = x;
-//     console.log(k);
+//     x = n % 10;
+//     teskari = teskari * 10 + x;
+//     n = (n - x) / 10;
 // }
+
+// console.log("Teskari =", teskari);
+
 
 // 19-
-// let n = parseInt(prompt("n = "));
-// let s = 0;
+// let n = +prompt("n = ");
+// let yigindi = 0;
+// let sanoq = 0;
 
 // while (n > 0) {
 //     let x = n % 10;
-//     n = Math.floor(n / 10);
-//     s += x;
+//     yigindi += x;
+//     sanoq++;
+//     n = (n - x) / 10;
 // }
 
-// console.log(s);
+// console.log("Raqamlar yig'indisi =", yigindi);
+// console.log("Raqamlar soni =", sanoq);
+
 
 // 20-
-// let n = parseInt(prompt("n = "));
-// let s = true;    
+// let n = +prompt("n = ");
+// let bor = false;
 
 // while (n > 0) {
 //     let x = n % 10;
-//     n = Math.floor(n / 10);
-
-//     if (x === 2) {
-//         console.log("2 raqami mavjud");
-//         s = false;
-//         break;
-//     }
+//     if (x == 2) bor = true;
+//     n = (n - x) / 10;
 // }
 
-// if (s) {
-//     console.log("2 raqami mavjud emas");
+// if (bor){
+//   console.log("2 raqami mavjud");  
+
+// } else {
+//     console.log("2 raqami yo'q");
 // }
+
