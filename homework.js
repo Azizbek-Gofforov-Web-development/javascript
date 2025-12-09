@@ -456,17 +456,18 @@
 // console.log("Yig'indi = " + (s - k));
 
 // 13-
-let a = parseFloat(prompt("a = "));
-let s = 1;
-let i = 1;
+// let a = parseFloat(prompt("a = "));
+// let s = 1;
+// let i = 1;
 
-while (s <= a) {
-    i++;
-    s += 1 / i;
-}
+// while (s <= a) {
+//     i++;
+//     s += 1 / i;
+// }
 
-console.log("s = " + s);
-console.log("k = " + i);
+// console.log("s = " + s);
+// console.log("k = " + i);
+
 
 // 14-
 // let a = +prompt("a = ");
@@ -573,5 +574,147 @@ console.log("k = " + i);
 //     console.log("2 raqami yo'q");
 // }
 
+// 21-
+// let n = +prompt("n =");
+// let t = n, bor = false;
 
+// while (t > 0) {
+//     if ((t % 10) % 2 == 1) bor = true;
+//     t = Math.floor(t / 10);
+// }
 
+// console.log(bor ? "Toq raqam bor" : "Toq raqam yo‘q");
+
+// 22-
+// let n = +prompt("n =");
+// let i = 2, tub = true;
+
+// while (i < n) {
+//     if (n % i == 0) tub = false;
+//     i++;
+// }
+
+// console.log(tub ? "Tub son" : "Tub emas");
+
+// 23-
+// let a = +prompt("a =");
+// let b = +prompt("b =");
+
+// while (a != b) {
+//     if (a > b) a -= b;
+//     else b -= a;
+// }
+
+// console.log("EKUB =", a);
+
+// 24-
+// let n = +prompt("n =");
+// let a = 1, b = 1, c = 0, bor = false;
+
+// while (c < n) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+// }
+
+// console.log(c == n ? "Ha, Fibonacci soni" : "Yo‘q");
+
+// 25-
+// let n = +prompt("n =");
+// let a = 1, b = 1, c = 1;
+
+// while (c <= n) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+// }
+
+// console.log("Birinchi katta Fibonacci =", c);
+
+// 26-
+// let n = +prompt("n =");
+// let a = 1, b = 1, c = 1;
+
+// while (c < n) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+// }
+
+// console.log("Oldingi =", a);
+// console.log("Keyingi =", a + b);
+
+// 27-
+// let n = +prompt("n =");
+// let a = 1, b = 1, k = 2, c = 1;
+
+// while (c < n) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     k++;
+// }
+
+// console.log("Tartib raqami:", k);
+
+// 28-
+// let e = Number(prompt("e = "));
+// let a1 = 2;
+// let k = 1;
+// let a = 0;
+
+// while (true) {
+//     a = 2 + 1 / a1;
+//     k++;
+
+//     if (Math.abs(a - a1) < e) {
+//         alert(
+//             "k = " + k +
+//             "\na1 = " + a1 +
+//             "\na = " + a
+//         );
+//         break;
+//     }
+
+//     a1 = a;
+// }
+// ?? ishonchim komilmas
+
+// 29-
+// let e = +prompt("e =");
+// let a1 = 1, a2 = 2, k = 3, a = 0;
+
+// while (true) {
+//     a = (a1 + 2 * a2) / 3;
+//     if (Math.abs(a - a2) <= e) break;
+
+//     a1 = a2;
+//     a2 = a;
+//     k++;
+// }
+
+// console.log("k =", k);
+// console.log("ak =", a);
+// console.log("ak-1 =", a2);
+// ?? ishonchim komilmas
+
+// 30-
+// let A = +prompt("A =");
+// let B = +prompt("B =");
+// let C = +prompt("C =");
+
+// let ac = A, aqq = 0;
+
+// while (ac >= C) {
+//     ac -= C;
+//     aqq++;
+// }
+
+// let bc = B, bqq = 0;
+
+// while (bc >= C) {
+//     bc -= C;
+//     bqq++;
+// }
+
+// console.log("Kvadratlar soni =", aqq * bqq);
